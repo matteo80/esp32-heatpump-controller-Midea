@@ -39,14 +39,9 @@ ota:
   - platform: esphome
     password: "a62383cc2af51400bb8d42df62c2688e"
 
-# Add webserver on port 80
-#web_server:
-  #port: 80
-
 wifi:
   ssid: !secret wifi_ssid
   password: !secret wifi_password
-  #use_address: 192.168.1.106
   manual_ip:
     static_ip: 192.168.1.13
     gateway: 192.168.1.1
@@ -65,7 +60,7 @@ uart:
   tx_pin: 17
   rx_pin: 16
   baud_rate: 9600
-  stop_bits: 1 # (prima dell'aggiornamento era 1)
+  stop_bits: 1
   parity: NONE
   rx_buffer_size: 512 # nuovo
   debug:              # nuovo
