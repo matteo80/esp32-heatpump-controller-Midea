@@ -30,15 +30,6 @@ logger:
     level: DEBUG
     baud_rate: 0
 
-# Enable Home Assistant API
-api:
-  encryption:
-    key: "5QdE+vB8Iaefbfj0v9f3BpchcljfYT+XOkNKGYzNTvQ="
-
-ota:
-  - platform: esphome
-    password: "a62383cc2af51400bb8d42df62c2688e"
-
 wifi:
   ssid: !secret wifi_ssid
   password: !secret wifi_password
